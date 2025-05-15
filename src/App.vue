@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import type { Time } from '@internationalized/date'
 import { TimeFieldInput, TimeFieldRoot } from 'reka-ui'
+import { ref } from 'vue'
+
+const time = ref<Time>()
 </script>
 
 <template>
@@ -9,6 +13,7 @@ import { TimeFieldInput, TimeFieldRoot } from 'reka-ui'
       class="mt-2 inline-flex w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
       locale="fr"
       id="time"
+      v-model="time"
       v-slot="{ segments }"
     >
       <template v-for="item in segments" :key="item.part">
@@ -17,5 +22,7 @@ import { TimeFieldInput, TimeFieldRoot } from 'reka-ui'
         </TimeFieldInput>
       </template>
     </TimeFieldRoot>
+
+    <pre class="mt-4">{{ time ?? 'undefined' }}</pre>
   </div>
 </template>

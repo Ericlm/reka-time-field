@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@internationalized/date": "^3.8.0",
     "@tailwindcss/vite": "^4.1.6",
     "reka-ui": "^2.2.1",
     "tailwindcss": "^4.1.6",
