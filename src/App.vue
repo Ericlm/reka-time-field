@@ -4,6 +4,8 @@ import { TimeFieldInput, TimeFieldRoot } from 'reka-ui'
 import { ref } from 'vue'
 
 const time = ref<Time>()
+
+const rawTime = ref<string>()
 </script>
 
 <template>
@@ -24,5 +26,10 @@ const time = ref<Time>()
     </TimeFieldRoot>
 
     <pre class="mt-4">{{ time ?? 'undefined' }}</pre>
+
+    <hr class="my-6 border-gray-300" />
+
+    <input type="time" v-model="rawTime" />
+    <pre>{{ rawTime }}</pre>
   </div>
 </template>
