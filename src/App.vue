@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="bg-pink-500 text-white">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod voluptatibus culpa
     dignissimos, excepturi deleniti quidem quos optio placeat eum distinctio nostrum, nesciunt modi
     consequuntur autem est iure blanditiis, earum aliquam? Commodi accusamus optio est repudiandae
